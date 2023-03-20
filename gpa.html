@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPA_Inventory</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="style.css?1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  
+
+<link rel="icon" type="image/x-icon" href="assets/images/reprendre.png">
+
+<main>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #Home #1
+      -->
+
+     <article class="home  active" data-page="home">
+
+        <header>
+          <h2 class="h2 article-title">GPA_Inventory</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Je suis un étudiant qui pour le moment est en deuxième année de BTS des systèmes informatiques des organisations
+            Visant le master, je suis pationné d'informatique depuis mon plus jeune âge.
+          </p>
+
+          <p>
+           Je suis très orienté développement mais je souhaite me spécialiser aussi dans la sécurité quel soit web, application ou même réseaux
+          ,afin d'être le plus polyvalent possible et de pouvoir être apte à me débrouiller dans n'importe quelle domaine en terme de sécurité.
+          </p>
+        </section>
+
+
+
+        <!--
+          - Parcours #1 
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Compétence utilisé :</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/developpement-web.png" alt="Web development icon" width="140">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Travail d'équipe</h4>
+
+                <p class="service-item-text">
+                  Les tâches et le développement de cette application a nécessité l'entraide ainsi que le partage de code 
+                  afin que chacun dans le groupe s'occupe de certain partie
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/secu.png
+                " alt="securite" width="70">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Technologies utilisées</h4>
+
+                <p class="service-item-text">
+                  Ce projet a pour base une API WEB faites en C#, le language utilisé pour l'application elle même est en C# avec du Linq (Language Integrated Query)
+                  , le sql est légèrement présent dans le code.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/une-manette.png" alt="gaming" width="150">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Outils</h4>
+
+                <p class="service-item-text">
+                  Comme outils on aura utilisé GitHub pour le partage de code et de pouvoir suivre l'avancement de tout le monde
+                  Discord pour la communication
+                  Visual Studio Code pour la partie développement 
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/la-musique.png" alt="musique" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Musique</h4>
+
+                <p class="service-item-text">
+                  Un pationné de musique
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </section>
+
+        </div>
+
+
+
+    <div class="slider-container">
+      <div class="menu">
+        <label for="slide-dot-1"></label>
+        <label for="slide-dot-2"></label>
+        <label for="slide-dot-3"></label>
+        <label for="slide-dot-4"></label>
+        <label for="slide-dot-5"></label>
+        <label for="slide-dot-6"></label>
+        <label for="slide-dot-7"></label>
+      </div>
+      
+      <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
+      <img class="slide-img" src="assets/images/gpa/cc.png">
+
+      <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
+      <img class="slide-img" src="assets/images/gpa/parametrage_stock.png">
+      
+      <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
+      <img class="slide-img" src="assets/images/gpa/stock.png">
+
+      <input class="slide-input" id="slide-dot-4" type="radio" name="slides" checked>
+      <img class="slide-img" src="assets/images/gpa/commandeliste.png">
+
+      <input class="slide-input" id="slide-dot-5" type="radio" name="slides">
+      <img class="slide-img" src="assets/images/gpa/commandegestion.png">
+      
+      <input class="slide-input" id="slide-dot-6" type="radio" name="slides">
+      <img class="slide-img" src="assets/images/gpa/devis.png">
+
+      <input class="slide-input" id="slide-dot-7" type="radio" name="slides">
+      <img class="slide-img" src="assets/images/gpa/addligne.png">
+
+    </div>
+      <a href="index.php" target="_blank" class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900">Retour</a>
+      </article>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
