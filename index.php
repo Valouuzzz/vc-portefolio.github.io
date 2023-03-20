@@ -575,7 +575,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/GPA.png" alt="finance" loading="lazy" width="40">>
+                  <img src="./assets/images/gpa/cc.png" alt="finance" loading="lazy" width="40">>
                 </figure>
 
                 <h3 class="project-title">GPA_Inventory</h3>
@@ -638,7 +638,7 @@
         </header>
         <section class="about-text">
 
-          <p>La cybersécurité fait référence à l'ensemble des pratiques, technologies et mesures mises en place pour protéger les systèmes informatiques, les réseaux, les programmes et les données contre les attaques, les dommages ou les accès non autorisés. Cela implique la prévention, la détection et la réponse aux menaces qui peuvent compromettre la confidentialité, l'intégrité et la disponibilité des données et des systèmes informatiques. La cybersécurité est devenue essentielle pour protéger les entreprises, les gouvernements et les utilisateurs individuels contre les cyberattaques de plus en plus sophistiquées.</p>
+          <p>La cybersécurité fait référence à l'ensemble des pratiques, technologies et mesures mises en place pour protéger les systèmes informatiques, les réseaux, les programmes et les données contre les attaques, les dommages ou les accès non autorisés. <b style="font-weight:bold !important;">Cela implique la prévention, la détection et la réponse aux menaces qui peuvent compromettre la confidentialité, l'intégrité et la disponibilité des données et des systèmes informatiques</b>. La cybersécurité est devenue essentielle pour protéger les entreprises, les gouvernements et les utilisateurs individuels contre les cyberattaques de plus en plus sophistiquées.</p>
 
           <ul class="service-list">
 
@@ -736,6 +736,22 @@ Le rapport du CERT-FR (Centre d'Expertise Gouvernemental de Réponse et de Trait
             </button>
 
           </form> 
+          <?php
+          if (isset($_POST['message'])) {
+              $entete  = 'MIME-Version: 1.0' . "\r\n";
+              $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+              $entete .= 'From: webmaster@monsite.fr' . "\r\n";
+              $entete .= 'Reply-to: ' . $_POST['email'];
+      
+              $message = '<h1>Message envoyé depuis la page Contact de monsite.fr</h1>
+              <p><b>Email : </b>' . $_POST['email'] . '<br>
+              <b>Message : </b>' . htmlspecialchars($_POST['message']) . '</p>';
+      
+              $retour = mail('valentin.ctx@gmail.com', 'Envoi depuis page Contact', $message, $entete);
+              if($retour)
+                  echo '<p>Votre message a bien été envoyé.</p>';
+          }
+          ?>
 
         </section>
 
