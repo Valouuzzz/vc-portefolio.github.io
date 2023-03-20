@@ -602,6 +602,7 @@
 
               </a>
             </li>
+                  <a href="https://www.exploit-db.com/" target="_blank" class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900">Exploit-DB</a>
 <!--
             <li class="project-item  active" data-filter-item data-category="applications c#">
               <a href="#">
@@ -736,23 +737,6 @@ Le rapport du CERT-FR (Centre d'Expertise Gouvernemental de Réponse et de Trait
             </button>
 
           </form> 
-          <?php
-          if (isset($_POST['message'])) {
-              $entete  = 'MIME-Version: 1.0' . "\r\n";
-              $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-              $entete .= 'From: webmaster@monsite.fr' . "\r\n";
-              $entete .= 'Reply-to: ' . $_POST['email'];
-      
-              $message = '<h1>Message envoyé depuis la page Contact de monsite.fr</h1>
-              <p><b>Email : </b>' . $_POST['email'] . '<br>
-              <b>Message : </b>' . htmlspecialchars($_POST['message']) . '</p>';
-      
-              $retour = mail('valentin.ctx@gmail.com', 'Envoi depuis page Contact', $message, $entete);
-              if($retour)
-                  echo '<p>Votre message a bien été envoyé.</p>';
-          }
-          ?>
-
         </section>
 
       </article>
