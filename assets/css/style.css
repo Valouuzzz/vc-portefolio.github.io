@@ -1902,3 +1902,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   -o-transform:scale(1.25); /* Opera */
   transform:scale(1.25);
   }
+
+.skill img{
+    object-fit: contain;
+}
